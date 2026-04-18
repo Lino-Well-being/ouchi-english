@@ -1,5 +1,5 @@
 // ========================================
-// おうち英語キズナClub - JavaScript
+// おうち英語 個別ロードマップ講座 - JavaScript
 // ========================================
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -56,28 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   fadeElements.forEach(el => observer.observe(el));
 
-  // --- FAQ Accordion ---
-  const faqItems = document.querySelectorAll('.faq-item');
-
-  faqItems.forEach(item => {
-    const question = item.querySelector('.faq-question');
-    question.addEventListener('click', () => {
-      const isActive = item.classList.contains('active');
-
-      // Close all
-      faqItems.forEach(i => {
-        i.classList.remove('active');
-        i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-      });
-
-      // Open clicked (if it was closed)
-      if (!isActive) {
-        item.classList.add('active');
-        question.setAttribute('aria-expanded', 'true');
-      }
-    });
-  });
-
   // --- Smooth scroll for anchor links ---
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -98,13 +76,14 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // --- Hide scroll indicator on scroll ---
-  const scrollIndicator = document.querySelector('.scroll-indicator');
-  if (scrollIndicator) {
+  const scrollDown = document.querySelector('.scroll-down');
+  if (scrollDown) {
     window.addEventListener('scroll', () => {
       if (window.pageYOffset > 200) {
-        scrollIndicator.style.opacity = '0';
+        scrollDown.style.opacity = '0';
+        scrollDown.style.transition = 'opacity 0.4s ease';
       } else {
-        scrollIndicator.style.opacity = '1';
+        scrollDown.style.opacity = '1';
       }
     });
   }
