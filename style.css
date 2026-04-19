@@ -1130,6 +1130,58 @@ section {
   font-weight: 800;
 }
 
+.profile-story {
+  margin-bottom: 20px;
+  font-size: 0.92rem;
+  color: var(--text-primary);
+  line-height: 2;
+}
+
+.profile-story strong {
+  color: var(--green-700);
+  font-weight: 700;
+}
+
+.profile-credentials {
+  margin-top: 28px;
+  padding: 24px 28px;
+  background: var(--white);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--gray-100);
+  box-shadow: var(--shadow-xs);
+}
+
+.credentials-label {
+  font-family: var(--font-en);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--green-500);
+  margin-bottom: 14px;
+}
+
+.credentials-list {
+  list-style: none;
+}
+
+.credentials-list li {
+  position: relative;
+  padding: 6px 0 6px 20px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.credentials-list li::before {
+  content: '✦';
+  position: absolute;
+  left: 0;
+  color: var(--green-400);
+  font-size: 0.6rem;
+  top: 10px;
+}
+
 /* ========================================
    Trial (行動CTA)
    ======================================== */
