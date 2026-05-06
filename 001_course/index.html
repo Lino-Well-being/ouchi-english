@@ -1,0 +1,1032 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>おうち英語と親子関係の土台づくり3ヶ月伴走プログラム</title>
+  <meta name="description" content="英語を教える講座ではありません。お子さんの進み具合とママの今の状態に合わせて、おうち英語の進め方、声かけ、見守り方を整える3ヶ月の個別伴走プログラムです。">
+  <meta property="og:title" content="おうち英語と親子関係の土台づくり3ヶ月伴走プログラム">
+  <meta property="og:description" content="ママは先生にならなくて大丈夫。おうち英語を通して、思春期・受験期まで続く親子の土台を育てる3ヶ月の個別伴走プログラム。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ouchi-english.jp/001_course/index.html">
+  <style>
+    :root {
+      --ink: #3b2d27;
+      --muted: #736b60;
+      --line: #eadfce;
+      --paper: #fffaf2;
+      --soft: #f8f1e6;
+      --soft-2: #eef6ec;
+      --white: #ffffff;
+      --green: #557d6d;
+      --green-dark: #3f695b;
+      --coral: #e47a61;
+      --yellow: #e8b857;
+      --teal: #4e837a;
+      --shadow: 0 18px 46px rgba(82, 65, 42, 0.11);
+      --radius: 8px;
+      --max: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 8% 4%, rgba(130, 160, 132, 0.12), transparent 22%),
+        radial-gradient(circle at 96% 18%, rgba(232, 184, 87, 0.12), transparent 24%),
+        var(--paper);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "YuGothic", "Noto Sans JP", Meiryo, sans-serif;
+      font-size: 16px;
+      line-height: 1.85;
+      letter-spacing: 0;
+    }
+
+    img, svg {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid rgba(234, 223, 206, 0.92);
+      background: rgba(255, 250, 242, 0.9);
+      backdrop-filter: blur(14px);
+    }
+
+    .nav {
+      width: min(var(--max), calc(100% - 32px));
+      min-height: 64px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--green-dark);
+      white-space: nowrap;
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+      letter-spacing: 0.04em;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .nav-links a {
+      text-decoration: none;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 12px 22px;
+      border: 0;
+      border-radius: var(--radius);
+      background: var(--green);
+      color: var(--white);
+      font-weight: 700;
+      line-height: 1.35;
+      text-decoration: none;
+      box-shadow: 0 12px 28px rgba(85, 125, 109, 0.22);
+      transition: transform 160ms ease, background 160ms ease, box-shadow 160ms ease;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+      background: var(--green-dark);
+      box-shadow: 0 16px 34px rgba(85, 125, 109, 0.28);
+    }
+
+    .button.secondary {
+      background: var(--white);
+      color: var(--green-dark);
+      box-shadow: inset 0 0 0 1px rgba(85, 125, 109, 0.24);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      min-height: 760px;
+      padding: 92px 0 78px;
+      background:
+        linear-gradient(90deg, rgba(255, 250, 242, 0.94) 0%, rgba(255, 250, 242, 0.86) 34%, rgba(255, 250, 242, 0.16) 70%),
+        url("assets/hero-watercolor.jpg"),
+        #fffaf2;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -1px;
+      height: 120px;
+      background: linear-gradient(to bottom, rgba(255, 250, 242, 0), var(--paper));
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 650px);
+      gap: 0;
+      align-items: center;
+    }
+
+    .eyebrow {
+      width: fit-content;
+      margin: 0 0 18px;
+      padding: 6px 12px;
+      border: 1px solid rgba(85, 125, 109, 0.26);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.76);
+      color: var(--green-dark);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      line-height: 1.35;
+      letter-spacing: 0;
+      text-wrap: balance;
+    }
+
+    h1 {
+      max-width: 720px;
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+      font-size: clamp(34px, 4.7vw, 56px);
+      font-weight: 600;
+      color: #3d281d;
+      text-shadow: 0 2px 0 rgba(255, 255, 255, 0.5);
+    }
+
+    .title-line {
+      display: block;
+    }
+
+    .hero-lead {
+      max-width: 680px;
+      margin: 22px 0 0;
+      color: #59483c;
+      font-size: 18px;
+      line-height: 1.9;
+    }
+
+    .hero-actions {
+      margin-top: 32px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .note {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .hero-visual {
+      display: none;
+    }
+
+    section {
+      padding: 76px 0;
+    }
+
+    .section-soft {
+      background:
+        radial-gradient(circle at 10% 10%, rgba(85, 125, 109, 0.08), transparent 22%),
+        radial-gradient(circle at 92% 18%, rgba(232, 184, 87, 0.12), transparent 22%),
+        var(--soft);
+    }
+
+    .section-white {
+      background:
+        linear-gradient(rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.82)),
+        var(--paper);
+    }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .narrow {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      margin-bottom: 18px;
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+      font-size: clamp(26px, 3vw, 38px);
+      font-weight: 600;
+      color: #3d281d;
+    }
+
+    .nowrap {
+      white-space: nowrap;
+    }
+
+    .section-lead {
+      max-width: 820px;
+      margin: 0;
+      color: #5b5147;
+      font-size: 17px;
+    }
+
+    .grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .grid.two {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grid.three {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.74);
+      padding: 24px;
+      box-shadow: 0 10px 26px rgba(82, 65, 42, 0.07);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: var(--green-dark);
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+      font-size: 20px;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .check-list {
+      margin: 28px 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .check-list li {
+      position: relative;
+      min-height: 54px;
+      padding: 14px 16px 14px 42px;
+      border: 1px solid rgba(234, 223, 206, 0.92);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.7);
+    }
+
+    .check-list li::before {
+      content: "";
+      position: absolute;
+      left: 16px;
+      top: 20px;
+      width: 12px;
+      height: 8px;
+      border-left: 3px solid var(--green);
+      border-bottom: 3px solid var(--green);
+      transform: rotate(-45deg);
+    }
+
+    .story {
+      display: grid;
+      grid-template-columns: 0.86fr 1.14fr;
+      gap: 36px;
+      align-items: start;
+    }
+
+    .quote {
+      border-left: 5px solid var(--coral);
+      background: rgba(255, 246, 239, 0.76);
+      padding: 24px;
+      border-radius: 18px;
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.75;
+    }
+
+    .steps {
+      margin-top: 34px;
+      display: grid;
+      gap: 16px;
+    }
+
+    .step {
+      display: grid;
+      grid-template-columns: 76px 1fr;
+      gap: 18px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.76);
+    }
+
+    .step-number {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #eef6ec;
+      color: var(--green-dark);
+      font-weight: 800;
+    }
+
+    .step h3 {
+      margin-bottom: 6px;
+      font-size: 19px;
+    }
+
+    .step p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .support-box {
+      margin-top: 34px;
+      border-radius: 26px;
+      background:
+        radial-gradient(circle at 95% 0%, rgba(232, 184, 87, 0.2), transparent 24%),
+        var(--green-dark);
+      color: var(--white);
+      padding: 34px;
+    }
+
+    .support-box h3 {
+      margin-bottom: 14px;
+      font-size: 23px;
+    }
+
+    .support-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px 18px;
+    }
+
+    .support-list li {
+      position: relative;
+      padding-left: 22px;
+    }
+
+    .support-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 13px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--yellow);
+    }
+
+    .price {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .price-card {
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.78);
+      box-shadow: var(--shadow);
+    }
+
+    .price-label {
+      color: var(--green-dark);
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+      font-weight: 800;
+    }
+
+    .profile {
+      display: grid;
+      grid-template-columns: minmax(280px, 0.78fr) minmax(0, 1.22fr);
+      gap: 34px;
+      align-items: start;
+      margin-top: 30px;
+    }
+
+    .profile-card {
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      background:
+        radial-gradient(circle at 88% 8%, rgba(232, 184, 87, 0.18), transparent 24%),
+        rgba(255, 255, 255, 0.78);
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+
+    .profile-photo {
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      margin-bottom: 22px;
+      border-radius: 22px;
+      object-fit: cover;
+      object-position: 50% 34%;
+      border: 8px solid rgba(255, 250, 242, 0.86);
+      box-shadow: 0 16px 34px rgba(82, 65, 42, 0.13);
+    }
+
+    .profile-name {
+      margin: 0;
+      font-family: "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
+      font-size: 30px;
+      line-height: 1.35;
+      color: #3d281d;
+    }
+
+    .profile-role {
+      margin: 8px 0 0;
+      color: var(--green-dark);
+      font-weight: 800;
+    }
+
+    .profile-tags {
+      margin: 22px 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 10px;
+    }
+
+    .profile-tags li {
+      padding: 10px 12px;
+      border: 1px solid rgba(85, 125, 109, 0.2);
+      border-radius: 999px;
+      background: rgba(238, 246, 236, 0.78);
+      color: var(--green-dark);
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .profile-body p {
+      margin: 0 0 14px;
+    }
+
+    .profile-message {
+      margin-top: 20px;
+      border-left: 4px solid var(--coral);
+      border-radius: 18px;
+      background: rgba(255, 246, 239, 0.78);
+      padding: 20px;
+      color: #58483e;
+      font-weight: 700;
+    }
+
+    .price-value {
+      margin-top: 8px;
+      font-size: clamp(30px, 4vw, 44px);
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .price-value span {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--muted);
+    }
+
+    .faq {
+      margin-top: 30px;
+      display: grid;
+      gap: 12px;
+    }
+
+    details {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.76);
+      padding: 18px 20px;
+    }
+
+    summary {
+      cursor: pointer;
+      color: var(--green-dark);
+      font-weight: 800;
+    }
+
+    details p {
+      margin: 12px 0 0;
+      color: var(--muted);
+    }
+
+    .final-cta {
+      text-align: center;
+      background:
+        linear-gradient(rgba(63, 105, 91, 0.9), rgba(63, 105, 91, 0.9)),
+        url("assets/hero-watercolor.jpg");
+      background-size: cover;
+      background-position: center;
+      color: var(--white);
+    }
+
+    .final-cta .section-title,
+    .final-cta .section-lead {
+      color: var(--white);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .final-cta .button {
+      margin-top: 28px;
+      background: var(--yellow);
+      color: var(--ink);
+      box-shadow: 0 14px 30px rgba(0, 0, 0, 0.16);
+    }
+
+    .site-footer {
+      padding: 28px 0;
+      background: #183b34;
+      color: rgba(255, 255, 255, 0.76);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .mt-28 {
+      margin-top: 28px;
+    }
+
+    @media (max-width: 920px) {
+      .nav-links a:not(.button) {
+        display: none;
+      }
+
+      .hero-inner,
+      .story,
+      .profile,
+      .grid.two,
+      .grid.three,
+      .price {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 44px;
+        min-height: 680px;
+        background:
+          linear-gradient(180deg, rgba(255, 250, 242, 0.96) 0%, rgba(255, 250, 242, 0.9) 48%, rgba(255, 250, 242, 0.42) 100%),
+          url("assets/hero-watercolor.jpg"),
+          #fffaf2;
+        background-size: cover;
+        background-position: 68% center;
+      }
+
+      .hero-visual {
+        min-height: 360px;
+      }
+
+      .check-list,
+      .support-list {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      body {
+        font-size: 15px;
+      }
+
+      .nav {
+        width: min(100% - 24px, var(--max));
+      }
+
+      .brand {
+        white-space: normal;
+        line-height: 1.35;
+      }
+
+      .nav .button {
+        min-height: 42px;
+        padding: 10px 12px;
+        font-size: 13px;
+      }
+
+      .hero-inner,
+      .wrap {
+        width: min(100% - 24px, var(--max));
+      }
+
+      .hero {
+        min-height: 720px;
+        padding-bottom: 250px;
+        background:
+          linear-gradient(180deg, rgba(255, 250, 242, 0.98) 0%, rgba(255, 250, 242, 0.94) 54%, rgba(255, 250, 242, 0.18) 100%),
+          url("assets/hero-watercolor.jpg"),
+          #fffaf2;
+        background-size: auto 100%, auto 54%;
+        background-repeat: no-repeat;
+        background-position: center top, center bottom;
+      }
+
+      h1 {
+        font-size: clamp(31px, 9vw, 43px);
+      }
+
+      .section-title {
+        font-size: clamp(25px, 7vw, 34px);
+      }
+
+      .nowrap {
+        white-space: normal;
+      }
+
+      section {
+        padding: 54px 0;
+      }
+
+      .hero-actions {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .card,
+      .step,
+      .price-card,
+      .support-box {
+        padding: 20px;
+      }
+
+      .step {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="メインナビゲーション">
+      <div class="brand">おうち英語キズナClub</div>
+      <div class="nav-links">
+        <a href="#program">内容</a>
+        <a href="#support">サポート</a>
+        <a href="#profile">講師</a>
+        <a href="#price">価格</a>
+        <a class="button" href="#contact">個別相談へ</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <p class="eyebrow">3ヶ月・全6回の個別伴走</p>
+          <h1>
+            <span class="title-line">おうち英語と親子関係の</span>
+            <span class="title-line">土台づくり3ヶ月伴走プログラム</span>
+          </h1>
+          <p class="hero-lead">
+            英語を教える講座ではありません。お子さんの進み具合とママの今の状態に合わせて、教材の使い方、声かけ、見守り方、家庭で続くスモールステップを一緒に整えます。
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#contact">まずは個別相談に申し込む</a>
+            <a class="button secondary" href="#program">内容を見る</a>
+          </div>
+          <p class="note">ママは先生にならなくて大丈夫。子どもを変えるのではなく、親子に合う関わり方を見つけていきます。</p>
+        </div>
+        <div class="hero-visual" role="img" aria-label="親子がおうちで安心して学びに向かうイメージ"></div>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="wrap story">
+        <div>
+          <h2 class="section-title">こんな気持ちに、なっていませんか。</h2>
+          <p class="section-lead">
+            おうち英語を始めた頃は、きっと「子どもの将来のために」と思っていたはずです。でも、続けるほど迷いが増えることがあります。
+          </p>
+        </div>
+        <ul class="check-list" aria-label="よくある悩み">
+          <li>教材はあるのに、うまく使えていない</li>
+          <li>YouTubeを見せているだけでいいのか不安</li>
+          <li>子どもが英語を嫌がるようになってきた</li>
+          <li>英検や文法をいつ始めるべきか迷う</li>
+          <li>ほかの家庭と比べて焦ってしまう</li>
+          <li>英語だけでなく、育児も家事も仕事も余裕がない</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-soft">
+      <div class="wrap story">
+        <div class="quote">
+          ママが先生になるほど、子どもが英語を嫌がることがあります。
+        </div>
+        <div>
+          <h2 class="section-title">必要なのは、<span class="nowrap">正しいメソッドを押し込むこと</span>ではありません。</h2>
+          <p>
+            子どもの性格、年齢、興味、家庭のリズム、ママの疲れ、夫婦関係、仕事の重圧、家事の負担。いろいろなものが重なって、「続けたいのに続かない」状態になっているだけです。
+          </p>
+          <p>
+            だからこの講座では、教材だけを見て終わりにしません。お子さんの反応とママ自身の状態を一緒に見ながら、今の親子に合う進め方を現実的な形に整えます。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="wrap">
+        <div class="narrow">
+          <h2 class="section-title">おうち英語を通して、<span class="nowrap">思春期・受験期まで続く</span>親子の土台を育てる。</h2>
+          <p class="section-lead">
+            ベースにあるのは、アドラー心理学とアサーティブコミュニケーション。子どもをコントロールするのではなく、承認し、勇気づけ、親子の関係性の中から自然な変化と成長を起こしていきます。
+          </p>
+        </div>
+        <div class="grid three mt-28">
+          <article class="card">
+            <h3>課題を分ける</h3>
+            <p>子どもの課題とママの課題を分け、焦りや不安をそのままぶつけない関わり方を身につけます。</p>
+          </article>
+          <article class="card">
+            <h3>承認と勇気づけ</h3>
+            <p>結果だけを評価するのではなく、工夫や挑戦を見つけて声をかける練習をします。</p>
+          </article>
+          <article class="card">
+            <h3>対話の土台</h3>
+            <p>思春期や受験期にもつながる、子どもの気持ちを聞きながら親の気持ちも伝える関係を育てます。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="program" class="section-soft">
+      <div class="wrap">
+        <div class="narrow">
+          <h2 class="section-title">3ヶ月で目指すこと</h2>
+          <p class="section-lead">
+            3ヶ月で、すべてを完成させる講座ではありません。目指すのは、おうち英語と親子関係の土台を整え、家庭ごとの自走プランを作ることです。
+          </p>
+        </div>
+        <ul class="check-list">
+          <li>今の家庭に合うおうち英語の進め方が見えている</li>
+          <li>すでに持っている教材の使い方が整理できている</li>
+          <li>英検、文法、中学受験との距離感を決められる</li>
+          <li>「やりなさい」以外の声かけを持っている</li>
+          <li>ママが先生役になりすぎない距離感をつかんでいる</li>
+          <li>次の3ヶ月に何を続けるか、何をやめるかが決まっている</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="wrap">
+        <div class="narrow">
+          <h2 class="section-title">3ヶ月・全6回の<span class="nowrap">個別セッション</span></h2>
+          <p class="section-lead">
+            月2回、1回60分。毎回、お子さんの進捗状況とママの状態を確認し、次回までに試すスモールステップと宿題をお渡しします。
+          </p>
+        </div>
+        <div class="steps">
+          <article class="step">
+            <div class="step-number">1</div>
+            <div>
+              <h3>現状整理とゴール設定</h3>
+              <p>子どもの年齢、英語歴、性格、好きなもの、今使っている教材を整理し、3ヶ月後の現実的なゴールを決めます。</p>
+            </div>
+          </article>
+          <article class="step">
+            <div class="step-number">2</div>
+            <div>
+              <h3>子どもに合う進め方を作る</h3>
+              <p>教材、YouTube、アプリ、オンライン英会話、絵本、音読、英検などの優先順位を決めます。</p>
+            </div>
+          </article>
+          <article class="step">
+            <div class="step-number">3</div>
+            <div>
+              <h3>声かけと関わり方の見直し</h3>
+              <p>「やりなさい」「なんでやらないの？」を減らし、承認と勇気づけの声かけを練習します。</p>
+            </div>
+          </article>
+          <article class="step">
+            <div class="step-number">4</div>
+            <div>
+              <h3>ママの心の負担を整える</h3>
+              <p>ママ友、夫、親、仕事、家事、育児の負担を整理し、自分を責める思考に気づきます。</p>
+            </div>
+          </article>
+          <article class="step">
+            <div class="step-number">5</div>
+            <div>
+              <h3>停滞・反発・迷いへの対応</h3>
+              <p>子どもがやらない時期の見守り方、英検・文法・中学受験との付き合い方を扱います。</p>
+            </div>
+          </article>
+          <article class="step">
+            <div class="step-number">6</div>
+            <div>
+              <h3>振り返りと今後の設計</h3>
+              <p>子どもの変化、ママの変化を確認し、次の3ヶ月のロードマップを作ります。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="support" class="section-soft">
+      <div class="wrap">
+        <div class="narrow">
+          <h2 class="section-title">人前では話しにくいことも、個別で相談できます。</h2>
+          <p class="section-lead">
+            グループコンサルはありません。個別セッションとLINEで、英語のことも、ママ自身の気持ちも扱います。
+          </p>
+        </div>
+        <div class="support-box">
+          <h3>サポート内容</h3>
+          <ul class="support-list">
+            <li>個別セッション 月2回・全6回</li>
+            <li>1回60分のオンラインセッション</li>
+            <li>LINE質問 無制限</li>
+            <li>24時間以内に返信</li>
+            <li>毎週サポートメール配信</li>
+            <li>毎週音声メール配信</li>
+            <li>共有掲示板で成長報告と励まし合い</li>
+            <li>毎回スモールステップと宿題を設定</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="wrap">
+        <div class="narrow">
+          <h2 class="section-title">英語以外の相談になっても、大丈夫です。</h2>
+          <p class="section-lead">
+            おうち英語を続けるママ自身を支えることも、このプログラムの大切な役割です。
+          </p>
+        </div>
+        <div class="grid two mt-28">
+          <article class="card">
+            <h3>扱える相談</h3>
+            <p>子どもが英語を嫌がる、教材が続かない、英検や文法で迷う、子どもに強く言いすぎてしまう、夫や親にわかってもらえない、仕事や家事で余裕がない。</p>
+          </article>
+          <article class="card">
+            <h3>サポート範囲の境界線</h3>
+            <p>扱うのは、子育て、親子関係、家庭内コミュニケーション、おうち英語の継続に関わる範囲です。医療、治療、診断、法的判断は専門外です。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="profile" class="section-soft">
+      <div class="wrap">
+        <div class="narrow">
+          <h2 class="section-title">講師紹介</h2>
+          <p class="section-lead">
+            実績だけではなく、迷いながら続けてきたリアルな経験をもとに、今悩んでいるママに寄り添います。
+          </p>
+        </div>
+        <div class="profile">
+          <aside class="profile-card">
+            <img class="profile-photo" src="assets/instructor-chiho.jpg" alt="おうち英語キズナClub主宰 益田千穂のプロフィール写真">
+            <p class="profile-name">益田 千穂</p>
+            <p class="profile-role">おうち英語キズナClub 主宰</p>
+            <ul class="profile-tags">
+              <li>おうち英語10年実践</li>
+              <li>証券業界35年</li>
+              <li>アドラー心理学</li>
+              <li>アサーティブコミュニケーション</li>
+            </ul>
+          </aside>
+          <div class="profile-body">
+            <p>
+              息子が2歳の頃から、おうち英語を始めました。目指していたのは「バイリンガルにすること」ではなく、英語を嫌いにさせず、親子で無理なく続けること。
+            </p>
+            <p>
+              DWEやオンライン英会話などを取り入れながら、うまくいったことも、途中で合わなくなったこともありました。語りかけを嫌がられた経験もあります。それでも、形を変えながら10年間続けてきました。
+            </p>
+            <p>
+              証券業界で35年働いてきた経験から、仕組み化・習慣化・情報整理を得意としています。現在は、アドラー心理学とアサーティブコミュニケーションをベースに、ママが先生になりすぎず、子どもを承認し勇気づける関わり方をお伝えしています。
+            </p>
+            <div class="profile-message">
+              一番伝えたいのは、「特別なママだからできた」ではなく、「迷いながらでも、親子に合う形に変えれば続けられる」ということです。
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="price" class="section-soft">
+      <div class="wrap">
+        <div class="narrow">
+          <h2 class="section-title">価格</h2>
+          <p class="section-lead">
+            初期募集では、受講後のご感想や変化の共有にご協力いただける方を対象に、モニター価格でご案内する予定です。
+          </p>
+        </div>
+        <div class="price">
+          <article class="price-card">
+            <div class="price-label">通常価格</div>
+            <div class="price-value">165,000〜198,000円</div>
+            <p>3ヶ月・全6回の個別伴走、LINE無制限、毎週メール・音声配信を含みます。</p>
+          </article>
+          <article class="price-card">
+            <div class="price-label">モニター価格</div>
+            <div class="price-value">99,000〜120,000円</div>
+            <p>正式募集時に、募集人数・支払い方法・条件を記載します。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="wrap">
+        <div class="narrow">
+          <h2 class="section-title">よくある質問</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>子どもに英語を教えてもらえますか？</summary>
+            <p>この講座では、英語そのものの指導は行いません。お子さんに合う教材、サービス、家庭での進め方、声かけ、見守り方を一緒に整えます。</p>
+          </details>
+          <details>
+            <summary>教材を持っていなくても受講できますか？</summary>
+            <p>受講できます。YouTube、アプリ、オンライン英会話、2万円以下で始めやすい教材など、家庭に合う選択肢を一緒に考えます。</p>
+          </details>
+          <details>
+            <summary>英検や文法も相談できますか？</summary>
+            <p>相談できます。ただし、英検も文法も、すべての子に今すぐ必要なわけではありません。年齢、性格、目的、負担感に合わせて一緒に判断します。</p>
+          </details>
+          <details>
+            <summary>英語以外の相談をしてもいいですか？</summary>
+            <p>大丈夫です。ママ友、夫、親、仕事、家事、育児の負担など、おうち英語を続けるうえで影響していることは扱えます。</p>
+          </details>
+          <details>
+            <summary>3ヶ月で子どもは自発的に英語を勉強するようになりますか？</summary>
+            <p>必ずそうなるとは約束できません。このプログラムで目指すのは、子どもを無理に変えることではなく、家庭に合う進め方と関わり方を整えることです。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="final-cta">
+      <div class="wrap">
+        <h2 class="section-title">まずは、今のおうち英語の状況と、ママ自身のお悩みを聞かせてください。</h2>
+        <p class="section-lead">
+          おうち英語は、家庭によって正解が違います。子どもを変えようとしなくていい。自分を無理に変えようとしなくても大丈夫です。
+        </p>
+        <a class="button" href="https://ouchi-english.jp/" aria-label="個別相談に申し込む">個別相談に申し込む</a>
+        <p class="note">※申込みリンクは仮です。正式なフォームURLが決まり次第、差し替えてください。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      おうち英語キズナClub / 益田千穂
+    </div>
+  </footer>
+</body>
+</html>
