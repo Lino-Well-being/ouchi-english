@@ -179,6 +179,9 @@
       line-height: 1.35;
       letter-spacing: 0;
       text-wrap: balance;
+      word-break: keep-all;
+      overflow-wrap: normal;
+      line-break: strict;
     }
 
     h1 {
@@ -192,6 +195,10 @@
 
     .title-line {
       display: block;
+    }
+
+    .phrase {
+      display: inline-block;
     }
 
     .hero-lead {
@@ -675,7 +682,7 @@
       }
 
       .nowrap {
-        white-space: normal;
+        white-space: nowrap;
       }
 
       section {
@@ -743,7 +750,10 @@
     <section class="section-white">
       <div class="wrap story">
         <div>
-          <h2 class="section-title">こんな悩み、ありませんか。</h2>
+          <h2 class="section-title">
+            <span class="title-line">こんな悩み、</span>
+            <span class="title-line">ありませんか。</span>
+          </h2>
           <p class="section-lead">
             SNS、教材、YouTube、アプリ、英語絵本、AI。選択肢が増えた分だけ、「結局どれが正解？」と迷いやすくなっています。
           </p>
@@ -765,7 +775,11 @@
           多くのママが迷い続ける理由は、やり方が足りないからではありません。
         </div>
         <div>
-          <h2 class="section-title">必要なのは、<span class="nowrap">あなたの家庭に合う判断基準</span>です。</h2>
+          <h2 class="section-title">
+            <span class="title-line">必要なのは、</span>
+            <span class="title-line">あなたの家庭に合う</span>
+            <span class="title-line">判断基準です。</span>
+          </h2>
           <p>
             基準がないまま選ぶと、どの方法も「正しそう」に見えてしまいます。AIも英語絵本も、使い方が合えば大きな味方になりますが、順番や目的がズレると、親子の負担になることがあります。
           </p>
@@ -779,7 +793,12 @@
     <section class="section-white">
       <div class="wrap">
         <div class="narrow">
-          <h2 class="section-title">AIと英語絵本は、<span class="nowrap">正しく使えば</span>おうち英語の味方になります。</h2>
+          <h2 class="section-title">
+            <span class="title-line">AIと英語絵本は、</span>
+            <span class="title-line">正しく使えば</span>
+            <span class="title-line">おうち英語の</span>
+            <span class="title-line">味方になります。</span>
+          </h2>
           <p class="section-lead">
             実はおうち英語には「順番」と「段階」があります。インプット不足なのに話させようとしたり、年齢に合わない方法を選んだりすると、効果より先に抵抗感が出ることがあります。
           </p>
@@ -804,7 +823,10 @@
     <section id="program" class="section-soft">
       <div class="wrap">
         <div class="narrow">
-          <h2 class="section-title">このプログラムで目指すこと</h2>
+          <h2 class="section-title">
+            <span class="title-line">このプログラムで</span>
+            <span class="title-line">目指すこと</span>
+          </h2>
           <p class="section-lead">
             情報に振り回される状態から抜け出し、AIと英語絵本を「家庭に合う形」で取り入れられる状態を作ります。
           </p>
@@ -823,7 +845,11 @@
     <section class="section-white">
       <div class="wrap">
         <div class="narrow">
-          <h2 class="section-title">AIと英語絵本を取り入れた<span class="nowrap">実践プログラム</span></h2>
+          <h2 class="section-title">
+            <span class="title-line">AIと英語絵本を</span>
+            <span class="title-line">取り入れた</span>
+            <span class="title-line">実践プログラム</span>
+          </h2>
           <p class="section-lead">
             知識を聞いて終わりではなく、毎月の個人指導とグループコンサルで、実際の家庭への落とし込みまで伴走します。
           </p>
@@ -878,7 +904,11 @@
     <section id="support" class="section-soft">
       <div class="wrap">
         <div class="narrow">
-          <h2 class="section-title">個別で整え、グループで視野を広げます。</h2>
+          <h2 class="section-title">
+            <span class="title-line">個別で整え、</span>
+            <span class="title-line">グループで視野を</span>
+            <span class="title-line">広げます。</span>
+          </h2>
           <p class="section-lead">
             一人ひとりの家庭に合わせる時間と、他の家庭の実例から学ぶ時間の両方を用意します。
           </p>
@@ -902,7 +932,10 @@
     <section class="section-white">
       <div class="wrap">
         <div class="narrow">
-          <h2 class="section-title">ただのAI講座でも、絵本講座でもありません。</h2>
+          <h2 class="section-title">
+            <span class="title-line">ただのAI講座でも、</span>
+            <span class="title-line">絵本講座でもありません。</span>
+          </h2>
           <p class="section-lead">
             AIも英語絵本も、目的は「子どもにやらせること」ではありません。親子で楽しみながら、無理なく続く仕組みを作るために使います。
           </p>
@@ -990,15 +1023,15 @@
         </div>
         <div class="faq">
           <details>
-            <summary>AIが苦手でも参加できますか？</summary>
+            <summary><span class="phrase">AIが苦手でも</span><span class="phrase">参加できますか？</span></summary>
             <p>参加できます。難しい設定や専門用語ではなく、おうち英語の現場で使える形に絞ってお伝えします。</p>
           </details>
           <details>
-            <summary>英語絵本を持っていなくても大丈夫ですか？</summary>
+            <summary><span class="phrase">英語絵本を</span><span class="phrase">持っていなくても</span><span class="phrase">大丈夫ですか？</span></summary>
             <p>大丈夫です。年齢や興味に合わせて、これから選ぶところから一緒に考えます。</p>
           </details>
           <details>
-            <summary>グループコンサルでは何をしますか？</summary>
+            <summary><span class="phrase">グループコンサルでは</span><span class="phrase">何をしますか？</span></summary>
             <p>他のママの事例も聞きながら、AI活用、絵本の取り入れ方、子どもが乗らない時期の対応などを扱います。</p>
           </details>
           <details>
@@ -1006,7 +1039,7 @@
             <p>毎月1回60分の個人指導セッションがあります。家庭ごとの状況に合わせて、進め方を具体的に調整します。</p>
           </details>
           <details>
-            <summary>子どもにAIを直接使わせる講座ですか？</summary>
+            <summary><span class="phrase">子どもにAIを</span><span class="phrase">直接使わせる</span><span class="phrase">講座ですか？</span></summary>
             <p>基本はママがAIを使い、絵本選びや声かけ、家庭プラン作成の負担を減らすための講座です。お子さんに直接使わせるかは年齢と家庭方針に合わせて判断します。</p>
           </details>
         </div>
@@ -1015,7 +1048,11 @@
 
     <section id="contact" class="final-cta">
       <div class="wrap">
-        <h2 class="section-title">まずは、今のやり方を無料でチェックしてみませんか。</h2>
+        <h2 class="section-title">
+          <span class="title-line">まずは、今のやり方を</span>
+          <span class="title-line">無料でチェックして</span>
+          <span class="title-line">みませんか。</span>
+        </h2>
         <p class="section-lead">
           AIも英語絵本も、家庭に合えば大きな味方になります。まずは「今のやり方が合っているか」を一緒に整理しましょう。
         </p>
