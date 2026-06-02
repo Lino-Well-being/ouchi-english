@@ -1,0 +1,1158 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>おうち英語の目標とロードマップを一緒につくる 半年間マンツーマン伴走</title>
+  <meta name="description" content="教材を増やす前に、わが子がどこを目指すのかを決める。習慣化、現実的な目標設計、親子コーチングまで整える半年間マンツーマン伴走です。">
+  <meta property="og:title" content="おうち英語の目標とロードマップを一緒につくる 半年間マンツーマン伴走">
+  <meta property="og:description" content="受験、会話力、海外生活など、家庭ごとの現実的な目標地点を固め、親子関係を守りながら続くロードマップを半年で作ります。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ouchi-english.jp/kizuna-half-year-course/index.html">
+  <style>
+    :root {
+      --ink: #1a1714;
+      --brown: #3a2a1f;
+      --brown-soft: #6c4f35;
+      --muted: #756a5c;
+      --cream: #f8f1e5;
+      --cream-2: #fffaf1;
+      --white: #ffffff;
+      --gold: #c9a961;
+      --gold-light: #e8c77a;
+      --gold-deep: #a98037;
+      --line: rgba(201, 169, 97, 0.38);
+      --shadow: 0 22px 58px rgba(58, 42, 31, 0.14);
+      --radius: 18px;
+      --max: 1120px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(90deg, rgba(255,255,255,0.24), rgba(255,255,255,0) 18%, rgba(255,255,255,0.35) 46%, rgba(255,255,255,0) 72%),
+        radial-gradient(circle at 12% 0%, rgba(232, 199, 122, 0.2), transparent 32%),
+        radial-gradient(circle at 94% 18%, rgba(201, 169, 97, 0.16), transparent 28%),
+        var(--cream);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", "YuGothic", "Noto Sans JP", Meiryo, sans-serif;
+      font-size: 16px;
+      line-height: 1.85;
+      letter-spacing: 0;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        repeating-linear-gradient(90deg, rgba(255,255,255,0.18) 0 2px, rgba(255,255,255,0) 2px 84px),
+        linear-gradient(90deg, rgba(255,255,255,0.25), rgba(255,255,255,0), rgba(255,255,255,0.22));
+      opacity: 0.48;
+      pointer-events: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    h1, h2, h3, p {
+      margin-top: 0;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.34;
+      letter-spacing: 0;
+      text-wrap: balance;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid rgba(201, 169, 97, 0.26);
+      background: rgba(255, 250, 241, 0.9);
+      backdrop-filter: blur(16px);
+    }
+
+    .nav {
+      width: min(var(--max), calc(100% - 32px));
+      min-height: 68px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--brown);
+      font-size: 14px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .brand-mark {
+      width: 28px;
+      height: 28px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--gold-light), var(--gold-deep));
+      box-shadow: inset 0 0 0 2px rgba(255,255,255,0.42), 0 10px 18px rgba(169,128,55,0.24);
+      position: relative;
+    }
+
+    .brand-mark::after {
+      content: "";
+      position: absolute;
+      left: 8px;
+      top: 7px;
+      width: 12px;
+      height: 8px;
+      border-radius: 2px 2px 5px 5px;
+      border: 2px solid rgba(58,42,31,0.55);
+      border-top: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 13px 22px;
+      border: 0;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--gold-light), var(--gold), var(--gold-deep));
+      color: #22170f;
+      font-weight: 900;
+      line-height: 1.35;
+      text-decoration: none;
+      box-shadow: 0 16px 32px rgba(169, 128, 55, 0.28);
+      transition: transform 160ms ease, box-shadow 160ms ease;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 20px 38px rgba(169, 128, 55, 0.34);
+    }
+
+    .button.secondary {
+      background: rgba(255, 255, 255, 0.78);
+      color: var(--brown);
+      box-shadow: inset 0 0 0 1px var(--line);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      min-height: 760px;
+      padding: 96px 0 84px;
+      background:
+        linear-gradient(90deg, rgba(248,241,229,0.98) 0%, rgba(248,241,229,0.9) 40%, rgba(248,241,229,0.24) 74%),
+        url("assets/hero-watercolor.jpg"),
+        var(--cream);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      pointer-events: none;
+    }
+
+    .hero::before {
+      inset: 18px;
+      border: 1px solid rgba(201,169,97,0.32);
+      border-radius: 26px;
+    }
+
+    .hero::after {
+      left: 0;
+      right: 0;
+      bottom: -1px;
+      height: 118px;
+      background: linear-gradient(to bottom, rgba(248,241,229,0), var(--cream));
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 680px);
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 20px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.74);
+      border: 1px solid var(--line);
+      color: var(--brown);
+      font-size: 13px;
+      font-weight: 900;
+      box-shadow: 0 10px 26px rgba(58,42,31,0.07);
+    }
+
+    .eyebrow::before {
+      content: "半年";
+      display: inline-grid;
+      place-items: center;
+      width: 46px;
+      height: 24px;
+      border-radius: 999px;
+      color: #271b12;
+      background: linear-gradient(135deg, var(--gold-light), var(--gold));
+      font-size: 12px;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 720px;
+      color: #15110e;
+      font-size: clamp(36px, 5vw, 64px);
+      font-weight: 900;
+      letter-spacing: 0;
+      word-break: keep-all;
+      overflow-wrap: normal;
+      line-break: strict;
+      text-shadow: 0 2px 0 rgba(255,255,255,0.68);
+    }
+
+    .gold-text {
+      color: var(--gold-deep);
+      background: linear-gradient(135deg, #f0d88a 0%, #c99b37 48%, #8f6827 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke: 1px rgba(58, 42, 31, 0.18);
+      text-shadow: 0 2px 0 rgba(255,255,255,0.82), 0 10px 22px rgba(169,128,55,0.22);
+    }
+
+    .hero-lead {
+      max-width: 680px;
+      margin: 24px 0 0;
+      color: #4e4034;
+      font-size: 18px;
+      line-height: 1.95;
+      font-weight: 650;
+    }
+
+    .hero-actions {
+      margin-top: 34px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .note {
+      margin: 16px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    section {
+      padding: 82px 0;
+    }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .narrow {
+      max-width: 840px;
+      margin: 0 auto;
+    }
+
+    .section-white {
+      background: rgba(255, 255, 255, 0.58);
+    }
+
+    .section-cream {
+      background:
+        radial-gradient(circle at 12% 12%, rgba(232,199,122,0.16), transparent 26%),
+        radial-gradient(circle at 92% 8%, rgba(201,169,97,0.12), transparent 24%),
+        rgba(255, 250, 241, 0.72);
+    }
+
+    .section-title {
+      margin-bottom: 18px;
+      color: var(--ink);
+      font-size: clamp(28px, 3vw, 42px);
+      font-weight: 900;
+    }
+
+    .section-lead {
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 17px;
+      font-weight: 650;
+    }
+
+    .brown-band {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 0 24px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: var(--brown);
+      color: var(--cream-2);
+      font-size: 13px;
+      font-weight: 900;
+      box-shadow: 0 12px 26px rgba(58,42,31,0.16);
+    }
+
+    .grid {
+      display: grid;
+      gap: 22px;
+    }
+
+    .grid.two {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grid.three {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .card {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.76);
+      padding: 26px;
+      box-shadow: 0 14px 34px rgba(58,42,31,0.08);
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--gold-light), var(--gold-deep));
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      color: var(--brown);
+      font-size: 20px;
+      font-weight: 900;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-weight: 650;
+    }
+
+    .check-list {
+      margin: 30px 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .check-list li {
+      position: relative;
+      padding: 15px 18px 15px 48px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255,255,255,0.76);
+      color: #3f352d;
+      font-weight: 800;
+      box-shadow: 0 10px 24px rgba(58,42,31,0.06);
+    }
+
+    .check-list li::before {
+      content: "";
+      position: absolute;
+      left: 18px;
+      top: 19px;
+      width: 14px;
+      height: 8px;
+      border-left: 3px solid var(--gold-deep);
+      border-bottom: 3px solid var(--gold-deep);
+      transform: rotate(-45deg);
+    }
+
+    .story {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 44px;
+      align-items: center;
+    }
+
+    .quote {
+      padding: 34px 30px;
+      border-radius: 24px;
+      background:
+        linear-gradient(145deg, rgba(255,255,255,0.86), rgba(248,241,229,0.74));
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      color: var(--brown);
+      font-size: clamp(24px, 3vw, 36px);
+      line-height: 1.45;
+      font-weight: 900;
+      text-align: center;
+    }
+
+    .quote::before,
+    .quote::after {
+      display: block;
+      color: var(--gold-deep);
+      font-size: 30px;
+      line-height: 1;
+    }
+
+    .quote::before {
+      content: "";
+      margin-bottom: 10px;
+      width: 82px;
+      height: 2px;
+      margin-left: auto;
+      margin-right: auto;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+
+    .quote::after {
+      content: "";
+      width: 96px;
+      height: 2px;
+      margin: 20px auto 0;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+
+    .steps {
+      margin-top: 34px;
+      display: grid;
+      gap: 16px;
+    }
+
+    .step {
+      display: grid;
+      grid-template-columns: 72px 1fr;
+      gap: 20px;
+      align-items: start;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.78);
+      box-shadow: 0 12px 30px rgba(58,42,31,0.07);
+    }
+
+    .step-number {
+      display: grid;
+      place-items: center;
+      width: 58px;
+      height: 58px;
+      border-radius: 999px;
+      color: #21160f;
+      background: linear-gradient(135deg, var(--gold-light), var(--gold), var(--gold-deep));
+      font-size: 20px;
+      font-weight: 950;
+      box-shadow: inset 0 0 0 2px rgba(255,255,255,0.42), 0 12px 22px rgba(169,128,55,0.22);
+    }
+
+    .step h3 {
+      margin: 0 0 8px;
+      color: var(--brown);
+      font-size: 20px;
+      font-weight: 900;
+    }
+
+    .step p {
+      margin: 0;
+      color: var(--muted);
+      font-weight: 650;
+    }
+
+    .offer {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 24px;
+      align-items: stretch;
+      margin-top: 34px;
+    }
+
+    .price-card {
+      border-radius: 24px;
+      border: 1px solid rgba(201,169,97,0.54);
+      background:
+        linear-gradient(145deg, rgba(255,255,255,0.9), rgba(248,241,229,0.86));
+      padding: 32px;
+      box-shadow: var(--shadow);
+    }
+
+    .price-label {
+      margin: 0;
+      color: var(--brown-soft);
+      font-size: 14px;
+      font-weight: 900;
+    }
+
+    .price-value {
+      margin: 10px 0 12px;
+      color: var(--brown);
+      font-size: clamp(38px, 5vw, 58px);
+      font-weight: 950;
+      line-height: 1.1;
+    }
+
+    .price-value span {
+      color: var(--muted);
+      font-size: 18px;
+      font-weight: 850;
+    }
+
+    .support-list {
+      margin: 0;
+      padding-left: 1.2em;
+      color: var(--muted);
+      font-weight: 750;
+    }
+
+    .support-list li + li {
+      margin-top: 8px;
+    }
+
+    .profile {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 34px;
+      align-items: center;
+      margin-top: 34px;
+    }
+
+    .profile-card {
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: rgba(255,255,255,0.78);
+      padding: 22px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    .profile-photo {
+      width: 180px;
+      height: 180px;
+      margin: 0 auto 18px;
+      border-radius: 999px;
+      object-fit: cover;
+      object-position: center 24%;
+      border: 4px solid rgba(232,199,122,0.72);
+      box-shadow: 0 16px 32px rgba(58,42,31,0.16);
+    }
+
+    .profile-name {
+      margin: 0 0 4px;
+      color: var(--brown);
+      font-size: 22px;
+      font-weight: 950;
+    }
+
+    .profile-role {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 850;
+    }
+
+    .profile-tags {
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+    }
+
+    .profile-tags li {
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(201,169,97,0.14);
+      color: var(--brown);
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .profile-body p {
+      color: var(--muted);
+      font-weight: 650;
+    }
+
+    .profile-message {
+      padding: 20px;
+      border-left: 4px solid var(--gold);
+      border-radius: 0 16px 16px 0;
+      background: rgba(255,255,255,0.68);
+      color: var(--brown);
+      font-weight: 900;
+    }
+
+    .faq {
+      margin-top: 32px;
+      display: grid;
+      gap: 12px;
+    }
+
+    details {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: rgba(255,255,255,0.78);
+      padding: 18px 20px;
+      box-shadow: 0 10px 24px rgba(58,42,31,0.05);
+    }
+
+    summary {
+      cursor: pointer;
+      color: var(--brown);
+      font-weight: 950;
+    }
+
+    details p {
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-weight: 650;
+    }
+
+    .final-cta {
+      text-align: center;
+      background:
+        linear-gradient(rgba(58,42,31,0.9), rgba(58,42,31,0.88)),
+        url("assets/hero-watercolor.jpg");
+      background-size: cover;
+      background-position: center;
+      color: var(--white);
+    }
+
+    .final-cta .section-title,
+    .final-cta .section-lead {
+      color: var(--white);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .final-cta .button {
+      margin-top: 28px;
+    }
+
+    .site-footer {
+      padding: 28px 0;
+      background: #1f1711;
+      color: rgba(255,255,255,0.72);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .mt-30 {
+      margin-top: 30px;
+    }
+
+    .title-block {
+      display: block;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 920px) {
+      .nav-links a:not(.button) {
+        display: none;
+      }
+
+      .story,
+      .grid.two,
+      .grid.three,
+      .offer,
+      .profile {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: 720px;
+        background:
+          linear-gradient(180deg, rgba(248,241,229,0.99) 0%, rgba(248,241,229,0.94) 52%, rgba(248,241,229,0.4) 100%),
+          url("assets/hero-watercolor.jpg"),
+          var(--cream);
+        background-size: cover;
+        background-position: 66% center;
+      }
+
+      .check-list {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      body {
+        font-size: 15px;
+      }
+
+      .nav {
+        width: min(100% - 24px, var(--max));
+      }
+
+      .brand {
+        white-space: normal;
+        line-height: 1.35;
+      }
+
+      .nav .button {
+        min-height: 42px;
+        padding: 10px 12px;
+        font-size: 13px;
+      }
+
+      .wrap,
+      .hero-inner {
+        width: min(100% - 24px, var(--max));
+      }
+
+      .hero {
+        min-height: 760px;
+        padding: 52px 0 260px;
+        background:
+          linear-gradient(180deg, rgba(248,241,229,0.99) 0%, rgba(248,241,229,0.96) 58%, rgba(248,241,229,0.18) 100%),
+          url("assets/hero-watercolor.jpg"),
+          var(--cream);
+        background-size: auto 100%, auto 50%;
+        background-repeat: no-repeat;
+        background-position: center top, center bottom;
+      }
+
+      .hero::before {
+        inset: 10px;
+      }
+
+      h1 {
+        font-size: clamp(32px, 9vw, 44px);
+      }
+
+      section {
+        padding: 58px 0;
+      }
+
+      .hero-actions {
+        align-items: stretch;
+        flex-direction: column;
+      }
+
+      .button {
+        width: 100%;
+      }
+
+      .card,
+      .step,
+      .price-card,
+      .quote,
+      .profile-card {
+        padding: 20px;
+      }
+
+      .step {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="メインナビゲーション">
+      <div class="brand"><span class="brand-mark" aria-hidden="true"></span>おうち英語キズナClub</div>
+      <div class="nav-links">
+        <a href="#program">内容</a>
+        <a href="#support">サポート</a>
+        <a href="#profile">講師</a>
+        <a class="button" href="https://utage-system.com/event/LrAKtuQ2iehZ/register">無料相談へ</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <p class="eyebrow">マンツーマン伴走</p>
+          <h1>
+            <span class="title-block">おうち英語の</span>
+            <span class="title-block gold-text">「目指す場所」</span>
+            <span class="title-block">とロードマップを</span>
+            <span class="title-block">一緒につくる</span>
+          </h1>
+          <p class="hero-lead">
+            教材を増やす前に、わが子がどこを目指すのかを一緒に決める。受験で困らない英語力なのか、海外生活や会話に必要な英語力なのか。お子さんの年齢、心理、発達段階、生活リズムを見ながら、親子関係を守って続くおうち英語ロードマップを半年で作ります。
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="https://utage-system.com/event/LrAKtuQ2iehZ/register">まずは無料相談に申し込む</a>
+            <a class="button secondary" href="#program">講座内容を見る</a>
+          </div>
+          <p class="note">教材をやれば自然にペラペラになる、という抽象的な期待ではなく、現実的な目標地点とプロセスを一緒に固める講座です。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="wrap">
+        <div class="narrow">
+          <p class="brown-band">おうち英語が止まったママへ</p>
+          <h2 class="section-title">このまま続けて、どこに向かうのか<br>分からなくなっていませんか。</h2>
+          <p class="section-lead">
+            教材はある。情報も集めてきた。子どものために、ちゃんとやりたい気持ちもある。でも「何を目指して、<br>何を優先すればいいのか」が曖昧なままだと、英語の時間が親子の緊張時間になってしまうことがあります。
+          </p>
+        </div>
+        <ul class="check-list">
+          <li>英語教材を買ったのに使いこなせていない</li>
+          <li>YouTubeを見せるだけになっていて不安</li>
+          <li>子どもが英語を嫌がるようになった</li>
+          <li>英検や文法をいつ始めるべきか迷う</li>
+          <li>受験、会話力、海外生活など目標の違いが整理できていない</li>
+          <li>SNSを見るたびに他の家庭と比べて焦る</li>
+          <li>今日もできなかったと夜に自分を責める</li>
+          <li>小学生になって英語の優先順位が下がった</li>
+          <li>親子関係を悪くしてまで続けるべきか悩む</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-cream">
+      <div class="wrap">
+        <div class="narrow">
+          <p class="brown-band">小さい子だからこその価値</p>
+          <h2 class="section-title">おうち英語は、はじめての学習体験になります。</h2>
+          <p class="section-lead">
+            おうち英語は、小さい子だからこそできる、はじめての学習です。数字の概念を入れるよりも先に、英語の音を聞いて、真似て、覚える。新しいことを覚える最初の喜びを大切に続けていくことで、その後のすべての学習につながる貴重な機会になります。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-cream">
+      <div class="wrap story">
+        <div class="quote">
+          続かないのは、<br>意志が弱いからでは<br>ありません。
+        </div>
+        <div>
+          <p class="brown-band">問題の本質</p>
+          <h2 class="section-title">家庭に合う「目標」と「戻り方」が、まだ設計されていないだけです。</h2>
+          <p>
+            おうち英語が止まる理由は、英語力だけではありません。朝が忙しい。宿題や習い事で夕方が埋まる。パパの理解が薄い。ママ自身が疲れている。子どもが成長して、親の提案をそのまま受け入れなくなった。さらに「何のために英語を続けるのか」が曖昧なままだと、迷いが増えていきます。
+          </p>
+          <p>
+            こういう現実を無視して「毎日これをやりましょう」と言われても、続かないのは自然です。だからキズナClubでは、最短ルートを押しつけるのではなく、家庭ごとの目標地点を固め、止まっても戻れる道を作ります。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="wrap">
+        <div class="narrow">
+          <p class="brown-band">無料相談で整理すること</p>
+          <h2 class="section-title">あなたの家庭専用の、<br>おうち英語ロードマップ。</h2>
+          <p class="section-lead">
+            ただの計画表ではありません。受験で困らない英語力をつけたいのか、海外赴任や海外生活の可能性に備えて会話力を高めたいのか。家庭ごとの現実的な到達地点を決め、そのためのプロセスを一緒に考えます。
+          </p>
+        </div>
+        <div class="grid three mt-30">
+          <article class="card">
+            <h3>目標地点を固める</h3>
+            <p>受験、会話力、海外生活、英検など、家庭が本当に目指したい方向を整理し、抽象的な期待を現実的な目標に落とし込みます。</p>
+          </article>
+          <article class="card">
+            <h3>今あるものを活かす</h3>
+            <p>DWE、絵本、YouTube、アプリ、オンライン英会話など、買い足す前に今ある素材を目標に合わせて整理します。</p>
+          </article>
+          <article class="card">
+            <h3>親子コーチング</h3>
+            <p>子どもの話を聞き、受け止め、子ども自身が考えられる関わり方を練習します。英語だけでなく、自立した精神を育てる土台を作ります。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="program" class="section-cream">
+      <div class="wrap">
+        <div class="narrow">
+          <p class="brown-band">Before / After</p>
+          <h2 class="section-title">半年で目指す変化</h2>
+          <p class="section-lead">
+            半年で英語ペラペラを約束する講座ではありません。目指すのは、家庭ごとの目標地点が明確になり、ママがひとりで迷わず整え直せる状態を作ることです。
+          </p>
+        </div>
+        <div class="grid three mt-30">
+          <article class="card">
+            <h3>目標が言語化される</h3>
+            <p>なんとなく英語をやる状態から、わが子に必要な英語力と優先順位が見えている状態へ。</p>
+          </article>
+          <article class="card">
+            <h3>習慣を整え直せる</h3>
+            <p>できなかった日に自己嫌悪で終わるのではなく、なぜ回らなかったかを見て生活導線を調整できる状態へ。</p>
+          </article>
+          <article class="card">
+            <h3>親子の対話が変わる</h3>
+            <p>やらせる声かけから、子どもの気持ちを聞き、受け止め、一緒に考える関わり方へ。</p>
+          </article>
+        </div>
+        <ul class="check-list">
+          <li>今の家庭に合うおうち英語の進め方が見えている</li>
+          <li>受験、会話力、海外生活など目標別の優先順位が見える</li>
+          <li>教材を買い足す前に、今あるものを活かせる</li>
+          <li>英語を嫌がったときに無理に押し切らなくなる</li>
+          <li>毎日10分、または週数回でも続く生活導線ができる</li>
+          <li>子どもが自分で考える力を育てる聞き方が身につく</li>
+          <li>中学入学までに何を積み上げるかが見えている</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="wrap">
+        <div class="narrow">
+          <p class="brown-band">半年伴走の流れ</p>
+          <h2 class="section-title">半年間・マンツーマンセッション</h2>
+          <p class="section-lead">
+            月2回の個別セッションで、現状整理、目標設計、習慣化、親子コーチング、ロードマップの実践と見直しまで進めます。毎回、次の2週間で試す小さな宿題を一緒に決めます。
+          </p>
+        </div>
+        <div class="steps">
+          <article class="step">
+            <div class="step-number">1</div>
+            <div>
+              <h3>現状整理</h3>
+              <p>お子さんの年齢、英語歴、教材、生活リズム、ママの悩みを整理します。私の家庭のケースも例にしながら、止まった理由を責めずに言語化します。</p>
+            </div>
+          </article>
+          <article class="step">
+            <div class="step-number">2</div>
+            <div>
+              <h3>目標地点を決める</h3>
+              <p>受験で困らない英語力を目指すのか、海外生活や会話力に備えるのか。教材ありきではなく、家庭の現実に合う到達地点を決めます。</p>
+            </div>
+          </article>
+          <article class="step">
+            <div class="step-number">3</div>
+            <div>
+              <h3>習慣化の導線設計</h3>
+              <p>朝、移動、夜、寝る前など、家庭の中で無理なく英語を置ける場所を決めます。頑張り続ける前提ではなく、生活の中で回る仕組みにします。</p>
+            </div>
+          </article>
+          <article class="step">
+            <div class="step-number">4</div>
+            <div>
+              <h3>子どもの心理と発達を見る</h3>
+              <p>嫌がる日、忙しい日、反抗的に見える日も、子どもの心理や発達段階をふまえて見直します。無理に押し切らず、戻り方を作ります。</p>
+            </div>
+          </article>
+          <article class="step">
+            <div class="step-number">5</div>
+            <div>
+              <h3>親子コーチング</h3>
+              <p>子どもの話をしっかり聞き、受け止め、問いかける関わり方を練習します。子どもが自分のことを考えられる自立した精神を支えます。</p>
+            </div>
+          </article>
+          <article class="step">
+            <div class="step-number">6</div>
+            <div>
+              <h3>中学入学までのロードマップ</h3>
+              <p>目標、教材、生活導線、声かけ、見直しポイントを整理し、講座後も迷ったときに戻れるロードマップを完成させます。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="support" class="section-cream">
+      <div class="wrap">
+        <div class="narrow">
+          <p class="brown-band">提供内容</p>
+          <h2 class="section-title">グループでは話しにくいことも、<br>個別で扱えます。</h2>
+          <p class="section-lead">
+            英語の話から始まっても大丈夫です。途中で育児、家族、仕事、ママ自身の気持ちの話になっても大丈夫です。無料相談では、お子さんの現在地とご家庭の状況を伺い、中学入学までのおうち英語ロードマップと必要なサポート内容を個別にお伝えします。
+          </p>
+        </div>
+        <div class="offer">
+          <article class="price-card">
+            <p class="price-label">無料個別相談</p>
+            <h3 class="section-title">最適なプランは、相談の中でご提案します。</h3>
+            <p class="note">お子さんの現在地、ご家庭の状況、目指したい英語力に合わせて、半年間の個別伴走プランをご提案します。継続サポートをご希望の方には、個別プログラムの詳細もご案内します。</p>
+            <div class="hero-actions">
+              <a class="button" href="https://utage-system.com/event/LrAKtuQ2iehZ/register">無料相談に申し込む</a>
+            </div>
+          </article>
+          <article class="price-card">
+            <p class="price-label">継続サポートに含まれるもの</p>
+            <ul class="support-list">
+              <li>個別Zoomセッション 月2回</li>
+              <li>チャット伴走（LINE24時間以内に返信します）</li>
+              <li>家庭別おうち英語ロードマップ作成</li>
+              <li>目標地点の整理と優先順位づけ</li>
+              <li>教材、動画、絵本、英会話導線の整理</li>
+              <li>毎回の小さな宿題設計</li>
+              <li>止まったときのリスタート相談</li>
+              <li>声かけ、親子コミュニケーション、親子コーチングの見直し</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="wrap">
+        <div class="narrow">
+          <p class="brown-band">対象者</p>
+          <h2 class="section-title">この講座が合う方・合わない方</h2>
+        </div>
+        <div class="grid two mt-30">
+          <article class="card">
+            <h3>合う方</h3>
+            <p>一度止めてしまったおうち英語を再開したい方。受験、会話力、海外生活など、わが子の英語の目標を整理したい方。最速で結果を出すより、親子関係を壊さず長く続く形を作りたい方。</p>
+          </article>
+          <article class="card">
+            <h3>合わない方</h3>
+            <p>半年で必ず英語ペラペラにしたい方。子どもを強制的に動かす方法を知りたい方。すべてを講師に丸投げしたい方。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="profile" class="section-cream">
+      <div class="wrap">
+        <div class="narrow">
+          <p class="brown-band">講師紹介</p>
+          <h2 class="section-title">迷いながらでも、形を変えれば続けられる。</h2>
+          <p class="section-lead">
+            実績だけではなく、うまくいかなかった経験も含めて、今悩んでいるママに寄り添います。
+          </p>
+        </div>
+        <div class="profile">
+          <aside class="profile-card">
+            <img class="profile-photo" src="assets/instructor-chiho.jpg" alt="おうち英語キズナClub主宰 益田千穂のプロフィール写真">
+            <p class="profile-name">益田 千穂</p>
+            <p class="profile-role">おうち英語キズナClub 主宰</p>
+            <ul class="profile-tags">
+              <li>おうち英語10年実践</li>
+              <li>DWE経験あり</li>
+              <li>ライフコーチ</li>
+              <li>心理セラピスト</li>
+              <li>アドラー心理学</li>
+              <li>アサーティブ</li>
+            </ul>
+          </aside>
+          <div class="profile-body">
+            <p>
+              息子が2歳の頃から、おうち英語を始めました。うまくいったことも、途中で合わなくなったこともありました。語りかけを嫌がられた経験もあります。
+            </p>
+            <p>
+              それでも10年間、形を変えながら続けてきました。英語を教え込むことより、親子関係を守りながら英語を暮らしに置くことを大切にしています。
+            </p>
+            <p>
+              証券業界で長く働いてきた経験から、仕組み化・習慣化・情報整理を得意としています。ライフコーチ、心理セラピストとしても活動し、これまで約100名の方とセッションを行ってきました。
+            </p>
+            <p>
+              夫婦関係、親子関係、仕事、生き方の悩みを伺い、離婚の危機を脱した方、長年の夢に向かって歩み出し司会の仕事を得た方など、問題解決と一歩踏み出すサポートをしてきました。現在は、アドラー心理学とアサーティブコミュニケーションをベースに、ママが先生になりすぎず、子どもを承認し勇気づける関わり方をお伝えしています。
+            </p>
+            <div class="profile-message">
+              一番伝えたいのは、特別なママだからできたのではなく、迷いながらでも親子に合う形に変えれば続けられる、ということです。英語を続けるうえでは、子どもとの適切な距離感を保ち、見守り、勇気づける関係性を育てることが大切です。親子関係は、声かけ・語りかけが9割。この会話術を身につけると、親子だけでなく、夫婦関係や仕事など、さまざまな人間関係にも良い影響が広がっていきます。
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-white">
+      <div class="wrap">
+        <div class="narrow">
+          <p class="brown-band">FAQ</p>
+          <h2 class="section-title">よくある質問</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>英語が苦手な親でも大丈夫ですか？</summary>
+            <p>大丈夫です。親が英語の先生になる必要はありません。家庭に合う英語の置き方を一緒に作ります。</p>
+          </details>
+          <details>
+            <summary>教材を持っていなくても受講できますか？</summary>
+            <p>受講できます。無料動画、市販の絵本、オンライン英会話など、今の家庭に合う選択肢を整理します。</p>
+          </details>
+          <details>
+            <summary>DWEなどの教材を挫折しています。それでも大丈夫ですか？</summary>
+            <p>大丈夫です。挫折ではなく、今の家庭に合う使い方に変えるタイミングかもしれません。</p>
+          </details>
+          <details>
+            <summary>子どもが英語を嫌がっています。受講できますか？</summary>
+            <p>できます。無理にやらせるのではなく、嫌がる理由を見ながら戻り方を作ります。</p>
+          </details>
+          <details>
+            <summary>小学生からでも遅くないですか？</summary>
+            <p>遅くありません。小学生には小学生の進め方があります。宿題、習い事、興味の変化をふまえて設計します。</p>
+          </details>
+          <details>
+            <summary>無料相談では何をしますか？</summary>
+            <p>今のお子さんの英語状況、ママが困っていること、中学入学までにどうなっていたいか、家庭で続けられない原因、半年で整えるべき計画を一緒に整理します。必要な方には継続サポートのご案内も可能です。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="final-cta">
+      <div class="wrap">
+        <h2 class="section-title">止まっても、戻ればいい。戻り方を、ひとりで探さなくていい。</h2>
+        <p class="section-lead">
+          子どもが嫌がる日も、忙しくて何もできない日もあります。そこで終わりにしないために、あなたの家庭に合う形を一緒に作りましょう。
+        </p>
+        <a class="button" href="https://utage-system.com/event/LrAKtuQ2iehZ/register">無料相談に申し込む</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      おうち英語キズナClub / 益田千穂
+    </div>
+  </footer>
+</body>
+</html>
