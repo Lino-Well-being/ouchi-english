@@ -124,7 +124,7 @@ header{
   text-align:center;font-size:clamp(1.5rem,4.5vw,2.2rem);font-weight:900;
   color:var(--green-deep);line-height:2;margin:30px 0 34px;
 }
-.philosophy-lead{max-width:620px;margin:0 auto 44px;text-align:center;font-weight:500}
+.philosophy-lead{max-width:620px;margin:0 auto 44px;text-align:left;font-weight:500}
 .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .pillar{
   background:var(--white);border-radius:18px;padding:28px 22px;text-align:center;
@@ -148,7 +148,7 @@ header{
 
 /* AI school */
 .aischool{background:#edf3e4}
-.aischool-lead{text-align:center;max-width:640px;margin:0 auto 36px;font-weight:500}
+.aischool-lead{text-align:left;max-width:640px;margin:0 auto 36px;font-weight:500}
 .school-shot{margin:0}
 .school-slides{position:relative;aspect-ratio:1600/1155;border-radius:18px;overflow:hidden;box-shadow:0 8px 24px rgba(107,79,58,.18);max-width:760px;margin:0 auto}
 .school-slides img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top center;opacity:0;transition:opacity .9s ease}
@@ -174,7 +174,7 @@ header{
 
 /* free apps */
 .free{background:var(--white)}
-.free-lead{text-align:center;max-width:600px;margin:0 auto 40px;font-weight:500}
+.free-lead{text-align:left;max-width:600px;margin:0 auto 40px;font-weight:500}
 .apps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .app-card{
   background:var(--cream);border-radius:18px;padding:26px 22px;text-decoration:none;
@@ -240,6 +240,11 @@ header{
   .final-inner{grid-template-columns:1fr;gap:28px}
   .final-cta h2,.final-cta .section-label{text-align:center}
   .final-cta{text-align:center}
+  .final-cta .lead{text-align:left}
+  .cta-btn{font-size:.95rem;padding:16px 24px;white-space:nowrap}
+}
+@media(max-width:374px){
+  .cta-btn{font-size:.82rem;padding:14px 16px}
 }
 
 footer{background:var(--green-deep);color:#d9d4c5;text-align:center;padding:34px 20px;font-size:.8rem}
@@ -306,7 +311,7 @@ footer .sns{margin-bottom:10px}
     <div data-reveal>
       <span class="hero-eyebrow">🌲 おうち英語キズナClub</span>
       <h1><span class="line">おうち英語が続かないのは、</span><br><span class="line">ママのせいじゃない。</span></h1>
-      <p class="hero-sub">子どもがコドモでいてくれる今を、<br>1日10分、親子で楽しむ。<br>英語ペラペラじゃない母が10年続けた「ゆるくても続く仕組みと声かけ」を渡します。</p>
+      <p class="hero-sub">子どもがコドモでいてくれる今を、<br>1日10分、親子で楽しむ。<br>英語ペラペラじゃない母が10年続けた<br>「ゆるくても続く仕組みと声かけ」を渡します。</p>
       <ul class="hero-badges">
         <li>🧸 英語が苦手なママでOK</li>
         <li>⏰ ワンオペでも回る10分</li>
@@ -382,7 +387,7 @@ footer .sns{margin-bottom:10px}
 <section class="aischool">
   <div class="wrap">
     <span class="section-label">AI SCHOOL</span>
-    <h2 data-reveal>声かけとおうち英語をAIが支える<br>会員専用サイト「くま先生の森のAI教室」</h2>
+    <h2 data-reveal>声かけとおうち英語をAIが支える<br>会員専用サイト<br>「くま先生の森のAI教室」</h2>
     <p class="aischool-lead" data-reveal>フレーズが出てこない日も、疲れて何もできない日も、AIに相談すれば「今日の小さな一歩」が見つかります。コピーして貼るだけのプロンプトを40本以上、悩み別レスキューを13種収録。むずかしいAIを、森のやさしさで使えるようにした会員専用サイトです。</p>
     <figure class="school-shot" data-reveal>
       <div class="school-slides" id="school-slides">
@@ -416,7 +421,7 @@ footer .sns{margin-bottom:10px}
   <div class="wrap">
     <span class="section-label">CLUB</span>
     <h2 data-reveal>まずは無料で、今日から10分</h2>
-    <p class="free-lead" data-reveal>キズナClubは、メルマガから始まる小さなクラブです。仲間になった方に、くま先生の森のアプリや教材をどんどんお配りしています。まずは体験版から、今日の10分をどうぞ。</p>
+    <p class="free-lead" data-reveal>キズナClubは、メルマガから始まる小さなクラブです。<br>仲間になった方に、くま先生の森のアプリや教材をどんどんお配りしています。<br>まずは体験版から、今日の10分をどうぞ。</p>
     <div class="apps">
       <a class="app-card" href="https://lino-well-being.github.io/kizuna-natsu-mori/" target="_blank" rel="noopener" data-reveal>
         <span class="app-tag">たいけん版・今すぐ使えます</span>
