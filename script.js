@@ -40,21 +40,26 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- Scroll animations (Intersection Observer) ---
   const fadeElements = document.querySelectorAll('.reveal');
 
-  const observerOptions = {
-    threshold: 0.15,
-    rootMargin: '0px 0px -40px 0px'
-  };
+  // フォールバック: IO非対応・アニメ抑制設定の環境では即時全表示（reveal演出を単一障害点にしない・2026-07-26 UT指摘）
+  if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    fadeElements.forEach(el => el.classList.add('visible'));
+  } else {
+    const observerOptions = {
+      threshold: 0.15,
+      rootMargin: '0px 0px -40px 0px'
+    };
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      }
-    });
-  }, observerOptions);
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
 
-  fadeElements.forEach(el => observer.observe(el));
+    fadeElements.forEach(el => observer.observe(el));
+  }
 
   // --- Smooth scroll for anchor links ---
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
