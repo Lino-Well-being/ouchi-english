@@ -142,6 +142,28 @@ header{
 .story-num b{display:block;color:var(--green-deep);font-size:1.35rem;font-weight:900;line-height:1.4}
 .story-num span{font-size:.75rem;color:var(--brown)}
 
+/* method */
+.method{background:var(--cream)}
+.method-card{
+  background:var(--white);border-radius:22px;padding:40px 36px;
+  max-width:680px;margin:0 auto;box-shadow:0 4px 14px rgba(107,79,58,.08);text-align:center;
+}
+.method-card .icon{font-size:2.4rem;margin-bottom:12px}
+.method-card p.body{font-size:.95rem;text-align:left;margin-bottom:14px}
+.method-list{list-style:none;text-align:left;margin:18px 0 24px;padding:0}
+.method-list li{
+  font-size:.92rem;font-weight:700;color:var(--brown);
+  padding:9px 0 9px 26px;position:relative;border-bottom:1px dashed var(--cream-deep);
+}
+.method-list li:last-child{border-bottom:none}
+.method-list li::before{content:"🌱";position:absolute;left:0;top:8px;font-size:.95rem}
+.method-go{
+  display:inline-block;background:var(--green);color:#fff;font-weight:900;
+  font-size:.95rem;padding:14px 34px;border-radius:999px;text-decoration:none;
+  box-shadow:0 3px 0 #2c3f26;
+}
+.method-go:hover{transform:translateY(-2px)}
+
 /* AI school */
 .aischool{background:#edf3e4}
 .aischool-lead{text-align:left;max-width:640px;margin:0 auto 36px;font-weight:500}
@@ -407,6 +429,25 @@ footer .sns{margin-bottom:10px}
           <div class="story-num"><b>10分</b><span>1日の親子英語時間</span></div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section class="method">
+  <div class="wrap">
+    <span class="section-label">METHOD</span>
+    <h2 data-reveal>親が英語を教える必要は、<br>ありません</h2>
+    <div class="method-card" data-reveal>
+      <div class="icon">🧸</div>
+      <p class="body">おうち英語がしんどくなる理由は、たいてい教材でも、子どもの反応でもありません。親のほうが「英語が得意だと思えていない」ことです。</p>
+      <p class="body">私も英検2級で、英語特化型ではありません。フォニックスもサイトワーズも、私は教えていません。それでも10年続きました。わが家が実際にやったのは、この4つだけです。</p>
+      <ul class="method-list">
+        <li>小さいうちに、発音を整えた</li>
+        <li>就学前後から、オンライン英会話を週2〜3回</li>
+        <li>先生は、英語圏の人を選んだ</li>
+        <li>フォニックスは、先生にお願いした</li>
+      </ul>
+      <a class="method-go" href="method.html">4つの中身を読む</a>
     </div>
   </div>
 </section>
