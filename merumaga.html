@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>無料メールレター登録｜おうち英語キズナClub</title>
+<meta name="description" content="おうち英語キズナClubの無料メールレター登録ページ。登録後すぐに6つのプレゼントをお届けします。">
+<link rel="canonical" href="https://ouchi-english.jp/merumaga.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧸</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<style>
+:root{
+  --green:#4a6741;
+  --green-deep:#395232;
+  --brown:#6b4f3a;
+  --cream:#faf6ec;
+  --cream-deep:#f3ead8;
+  --white:#fffdf8;
+  --ink:#3d3327;
+  --accent:#d98e4a;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:"Zen Maru Gothic","Hiragino Maru Gothic ProN",sans-serif;
+  color:var(--ink);
+  background:var(--cream);
+  line-height:1.9;
+  overflow-wrap:anywhere;
+}
+.wrap{max-width:560px;margin:0 auto;padding:48px 20px 64px}
+.card{background:var(--white);border-radius:20px;padding:36px 28px;box-shadow:0 6px 24px rgba(107,79,58,.10)}
+h1{font-size:1.5rem;color:var(--green-deep);font-weight:900;text-align:center;line-height:1.6}
+.lead{margin-top:14px;font-size:.95rem;text-align:center}
+.gift{margin:20px 0 4px;background:var(--cream-deep);border-radius:14px;padding:16px 18px;font-size:.9rem}
+.gift strong{color:var(--brown)}
+label{display:block;font-weight:700;margin:22px 0 6px;font-size:.95rem}
+input[type=email]{
+  width:100%;padding:14px;border:2px solid var(--cream-deep);border-radius:12px;
+  font-size:1rem;font-family:inherit;background:#fff;
+}
+input[type=email]:focus{outline:none;border-color:var(--green)}
+.cf-turnstile{margin-top:18px;display:flex;justify-content:center}
+button[type=submit]{
+  display:block;width:100%;margin-top:18px;padding:16px;border:none;border-radius:999px;
+  background:var(--green);color:#fff;font-size:1.05rem;font-weight:900;font-family:inherit;
+  cursor:pointer;transition:background .2s;
+}
+button[type=submit]:hover{background:var(--green-deep)}
+button[type=submit]:disabled{background:#b9b3a8;cursor:default}
+#rondo-status{margin-top:14px;text-align:center;font-size:.92rem;color:var(--brown);min-height:1.5em}
+.note{margin-top:18px;font-size:.8rem;color:#8a7d6b;text-align:center}
+.back{display:block;margin-top:26px;text-align:center;font-size:.9rem}
+.back a{color:var(--green);font-weight:700}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <h1>🌱 おうち英語キズナClub<br>メールレターの登録</h1>
+    <p class="lead">ご登録後、確認メールが届きます。<br>メール内のリンクを押すと登録完了です。</p>
+    <div class="gift">
+      <strong>🎁 登録後すぐ、6つのプレゼントをお届けします</strong><br>
+      森そだて英語（なつの森7日間たいけん版）／きろくま／ロードマップ ほか、
+      最初の一歩でつまずかないためのセットです。
+    </div>
+    <form id="rondo-subscribe">
+      <label for="rondo-email">メールアドレス</label>
+      <input
+        id="rondo-email"
+        name="email"
+        type="email"
+        inputmode="email"
+        autocomplete="email"
+        spellcheck="false"
+        placeholder="you@example.com"
+        required
+      >
+      <div class="cf-turnstile" data-sitekey="0x4AAAAAAEPpqsjJIxr0eJFA"></div>
+      <div aria-hidden="true" style="position:absolute;left:-10000px">
+        <label for="rondo-website">Website</label>
+        <input id="rondo-website" name="website" type="text" tabindex="-1" autocomplete="off">
+      </div>
+      <button type="submit">登録確認メールを受け取る</button>
+      <p id="rondo-status" role="status" aria-live="polite"></p>
+    </form>
+    <p class="note">いつでも配信停止できます。<br>ご登録のアドレスは配信以外には使いません。</p>
+  </div>
+  <p class="back"><a href="/">← おうち英語キズナClub トップへ</a></p>
+</div>
+
+<script>
+(() => {
+  const form = document.getElementById('rondo-subscribe');
+  const status = document.getElementById('rondo-status');
+  const button = form.querySelector('button[type="submit"]');
+  const source = new URLSearchParams(location.search).get('src') || 'site-merumaga';
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const data = new FormData(form);
+    const cfToken = data.get('cf-turnstile-response');
+    if (!cfToken) {
+      status.textContent = 'bot確認を完了してから、もう一度お試しください。';
+      return;
+    }
+    button.disabled = true;
+    button.textContent = '送信中…';
+    status.textContent = '';
+    try {
+      const response = await fetch('https://rondo.chiho-m.workers.dev/api/subscribe', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify({
+          email: data.get('email'),
+          website: data.get('website'),
+          cfToken,
+          source,
+        }),
+      });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      form.reset();
+      status.textContent = '確認メールを送りました。受信箱のリンクを開いて登録を完了してください。';
+    } catch {
+      status.textContent = '送信できませんでした。通信状態を確認し、bot確認をやり直してください。';
+      if (window.turnstile) window.turnstile.reset();
+    } finally {
+      button.disabled = false;
+      button.textContent = '登録確認メールを受け取る';
+    }
+  });
+})();
+</script>
+</body>
+</html>
