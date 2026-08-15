@@ -47,6 +47,36 @@ body{
 .btn:hover{opacity:.9;transform:translateY(-1px)}
 .btn-form{background:var(--coral);color:#fff}
 .cta-note{font-size:.82rem;color:#8a7d6b;margin-top:6px}
+.nazeima{
+  background:linear-gradient(180deg,#fdf8e6 0%,#faf0d2 100%);
+  padding:52px 26px 46px;
+}
+.nazeima h2{
+  text-align:center;font-size:1.5rem;font-weight:900;color:#2b5d8f;
+  margin-bottom:8px;line-height:1.5;
+}
+.nazeima h2 .ima{color:#e8795a}
+.nazeima h2::after{
+  content:"";display:block;width:180px;height:4px;margin:10px auto 26px;
+  background:#e8795a;border-radius:99px;opacity:.85;
+}
+.nz-card{
+  display:flex;gap:12px;align-items:flex-start;
+  background:#fffdf8;border-radius:18px;padding:20px 22px;margin:0 auto 16px;
+  max-width:600px;box-shadow:0 3px 10px rgba(107,79,58,.08);
+}
+.nz-card .leaf{flex:0 0 auto;font-size:1.2rem;line-height:1.9}
+.nz-card p{font-size:.98rem}
+.nz-card strong{color:#2b5d8f;font-weight:900}
+.nz-card:nth-child(4) strong{color:#e8795a}
+.nz-close{
+  text-align:center;font-size:1.3rem;font-weight:900;color:#6b4f3a;margin-top:26px;
+}
+.nz-close span{
+  color:#e8795a;
+  background:linear-gradient(transparent 68%, #ffd9a8 68%);
+  padding:0 2px;
+}
 .foot{
   background:var(--cream);
   padding:18px 20px 30px;
@@ -61,7 +91,13 @@ body{
   <img src="images/kouza/lp_01_hero.jpg" alt="おうち英語キズナClub 個別伴走講座　一人で続けなくていい場所があります　学びの習慣×親子コーチング×AI活用｜半年間のマンツーマン">
   <img src="images/kouza/lp_02_konna.jpg" alt="一人おうち英語の、3つの壁。「これで合ってる？」を誰にも聞けない。「イヤ！」が続くと、心が折れそうになる。年齢が上がると、何をすればいいか分からない。">
   <img src="images/kouza/lp_03_message.jpg" alt="ロードマップがあっても、一人だと止まってしまう。悪いのは、ママではありません。">
-  <img src="images/kouza/lp_035_nazeima.jpg" alt="なぜ、小さい「今」なのか。今整えた「進め方」と「関わり方」が、勉強が本格化する時期の安定した土台になります。中学・高校・大学受験のヤマを越えるカギは、円滑な親子関係です。関わり方を間違えたまま積むと、おうち英語が「親のおしきせ」になり、反発で積み上げた英語力が生きなくなることも。だから、小さい今のうちに。">
+  <section class="nazeima">
+    <h2>なぜ、小さい<span class="ima">「今」</span>なのか</h2>
+    <div class="nz-card"><span class="leaf">🌱</span><p>今整えた「進め方」と「関わり方」が、<strong>勉強が本格化する時期の安定した土台</strong>になります</p></div>
+    <div class="nz-card"><span class="leaf">🌱</span><p>中学・高校・大学受験のヤマを越えるカギは、<strong>円滑な親子関係</strong>です</p></div>
+    <div class="nz-card"><span class="leaf">🌱</span><p>関わり方を間違えたまま積むと、おうち英語が<strong>「親のおしきせ」</strong>になり、反発で積み上げた英語力が生きなくなることも</p></div>
+    <p class="nz-close">だから、<span>小さい今</span>のうちに。</p>
+  </section>
   <img src="images/kouza/lp_04_teigi.jpg" alt="この講座について：半年間、あなたの家庭専属で伴走するマンツーマンの講座です。学びの習慣・親子コーチング・AI活用">
   <img src="images/kouza/lp_05_nakami.jpg" alt="半年間で、一緒にやること。1 わが家の設計図：うちの子に合うやり方を、いっしょに作ります。2 声のかけ方：ガミガミ言わなくてすむ、ことばの選び方が身につきます。3 学びの習慣：AIもつかって、毎日をしくみにしていきます。">
   <img src="images/kouza/lp_06_goal.jpg" alt="目指すのはバイリンガルではなく「自分で学び続けられる子」。「英語が好き」は、その入口です。">
